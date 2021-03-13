@@ -1,0 +1,60 @@
+@import "../../css/styles/colors";
+
+.personalSkills {
+  &__gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    &__content {
+      width: 98%;
+      &__title {
+        border: 1px solid $light-border;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 41%;
+      }
+    }
+  }
+
+  &__tags {
+    // background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__tag {
+      background-color: $dark-grey-bg;
+      padding: 10px 20px 10px 20px;
+      display: flex;
+      margin-bottom: 20px;
+      // flex-grow: 1;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 10px;
+      border-radius: 6px;
+      span {
+        margin-right: 15px;
+      }
+      &__close {
+        border-radius: 100%;
+        padding: 3px;
+        cursor: pointer;
+        &:hover {
+          background-color: $darker-grey-bg;
+        }
+      }
+    }
+  }
+}

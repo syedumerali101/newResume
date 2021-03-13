@@ -1,0 +1,47 @@
+@import "../../../../css/styles/colors";
+
+.addWorkExprience {
+  width: 100%;
+  &__field {
+    height: 100%;
+    &__datePicker {
+      .MuiFormControl-marginNormal {
+        margin: 0 !important;
+        width: 100% !important;
+        
+        
+      }
+      
+    }
+    &--checkbox {
+      // font-size: 20px;
+      label {
+        font-family: "Inter Medium", sans-serif !important;
+        color: $light-text;
+      }
+      svg {
+        width: 35px;
+        height: 35px;
+      }
+
+      div {
+        height: 56px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__input {
+      width: 100%;
+    }
+
+    &__btnContainer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      &__btn {
+        width: 150px;
+      }
+    }
+  }
+}

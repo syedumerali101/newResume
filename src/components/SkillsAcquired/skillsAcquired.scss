@@ -1,0 +1,99 @@
+@import "../../css/styles/colors";
+
+.skillsAcquired {
+  &__right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    &__content {
+      width: 98%;
+      &__title {
+        border: 1px solid $light-border;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 41%;
+      }
+    }
+  }
+
+  &__selectedDocs {
+    padding-left: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    text-align: left;
+  }
+  &__fieldContainer {
+    margin-bottom: 20px;
+  }
+  &__btnContainer {
+    width: 30%;
+    &__btn {
+      width: 100%;
+    }
+  }
+
+  &__folders {
+    &__title {
+      margin-left: 20px;
+      font-family: "Inter Medium", sans-serif;
+      margin-top: 4px;
+    }
+    .MuiAccordion-root:before {
+      height: 0 !important;
+    }
+    .MuiPaper-elevation1 {
+      box-shadow: none !important;
+    }
+    .MuiTypography-body1 {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .MuiAccordionSummary-root.Mui-expanded,
+    .MuiAccordionSummary-root {
+      max-height: 50px !important;
+    }
+    &__files {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 20px;
+    }
+    &__file {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      width: 100%;
+
+      margin-bottom: 5px;
+
+      svg {
+        margin-right: 5px;
+        width: 5%;
+      }
+    }
+    // .MuiAccordionSummary-root.Mui-expanded {
+    //   max-height: 50px !important;
+    // }
+    // .MuiButtonBase-root.MuiAccordionSummary-root {
+    //   max-height: 50px !important;
+    // }
+  }
+}
+
+.file__txt {
+  width: 300px;
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}

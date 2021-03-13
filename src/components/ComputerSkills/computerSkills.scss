@@ -1,0 +1,84 @@
+@import "../../css/styles/colors";
+
+.computerSkills {
+  &__gridItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    &__content {
+      width: 98%;
+      &__title {
+        border: 1px solid $light-border;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 41%;
+      }
+    }
+  }
+
+  &__tags {
+    // background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &__title {
+      font-family: "Inter Medium", sans-serif;
+      text-transform: capitalize;
+    }
+
+    &__container {
+      // width: 25%;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    &--inner {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    &__tag {
+      background-color: $dark-grey-bg;
+      padding: 5px 10px;
+      display: flex;
+      margin-bottom: 20px;
+      // flex-grow: 1;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 10px;
+      font-size: 14px;
+      border-radius: 6px;
+      span {
+        margin-right: 15px;
+      }
+      &__close {
+        border-radius: 100%;
+        padding: 3px;
+        cursor: pointer;
+        &:hover {
+          background-color: $darker-grey-bg;
+        }
+      }
+    }
+  }
+}
+
+.no-msg {
+  font-family: "Inter Medium", sans-serif;
+  color: $light-text;
+  font-size: 14px;
+}

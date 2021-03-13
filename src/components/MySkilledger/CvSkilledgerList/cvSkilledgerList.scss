@@ -1,0 +1,30 @@
+@import "../../../css/styles/colors";
+
+.cvSkilledgerList {
+  width: 800px;
+
+  &__titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter SemiBold", sans-serif;
+    span {
+      width: 20%;
+      text-align: left;
+    }
+  }
+
+  &__content {
+    &__item {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Inter Medium", sans-serif !important;
+      span {
+        width: 20%;
+        text-align: left;
+      }
+    }
+  }
+}

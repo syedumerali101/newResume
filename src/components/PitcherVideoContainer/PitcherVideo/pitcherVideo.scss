@@ -1,0 +1,25 @@
+@import "../../../css/styles/colors";
+
+.pitcherVideo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__videoContainer {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-grey-bg;
+    margin-bottom: 20px;
+  }
+
+  &__actions {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

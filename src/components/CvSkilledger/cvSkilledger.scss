@@ -1,0 +1,102 @@
+@import "../../css/styles/colors";
+
+.cvSkilledger {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__btn {
+    margin-bottom: 20px;
+  }
+  &__message {
+    background-color: $dark-grey-bg;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    // justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    &__qrCode {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: $darker-grey-bg;
+      color: $default-black;
+      width: 50%;
+    }
+  }
+  &__digital {
+    border: 2px solid #000;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+
+    &__avatar {
+      position: absolute;
+      left: 20px;
+      top: 100px;
+      width: 200px !important;
+      height: 200px !important;
+      &__img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      h3 {
+        margin-top: 10px;
+      }
+    }
+
+    &__images {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 400px;
+      margin: auto;
+      margin-top: 40px;
+      &__title {
+        display: inline-block;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: "Inter Medium", sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+    }
+
+    &__urls {
+      margin-top: 80px;
+      position: relative;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        align-items: center;
+      }
+      &__qrcode {
+        position: absolute;
+        left: 20px;
+      }
+    }
+    footer {
+      background-color: $btn-primary;
+      color: white;
+      margin: 20px -20px -20px -20px;
+      padding: 20px;
+    }
+  }
+}

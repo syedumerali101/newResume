@@ -1,0 +1,31 @@
+@import "../../css/styles/colors";
+
+.zoomDetails {
+  width: 60%;
+  margin: 0 auto;
+
+  &__fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    &__field {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      p {
+        width: 98%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__input {
+        width: 98%;
+      }
+    }
+  }
+}

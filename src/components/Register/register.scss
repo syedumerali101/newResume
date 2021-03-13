@@ -1,0 +1,58 @@
+.register {
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title,
+  &__desc {
+    text-align: left;
+  }
+  &__title {
+    margin-bottom: 6px;
+  }
+  &__desc {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &--checkMark {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+    &__field {
+      margin-bottom: 20px !important;
+      &--sm {
+        width: 48%;
+        margin-bottom: 20px !important;
+      }
+    }
+    &__txt {
+      text-align: left;
+      margin-top: 20px;
+      font-size: 14px !important;
+    }
+    &__link {
+      color: #396fd4;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: "Inter SemiBold";
+    }
+
+    &__btn {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../css/styles/colors";
+
+.myAssets {
+  position: relative;
+  &__content {
+    padding: 20px 0;
+  }
+  &__gridItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__left {
+    }
+    &__right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  &__title {
+    font-family: "Inter Medium", sans-serif;
+    border: 1px solid $light-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 98%;
+  }
+
+  &__tabs {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid $light-border;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    z-index: 1;
+  }
+  &__tab {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    width: 24.5%;
+    text-decoration: none;
+    color: $default-black;
+    background-color: $dark-grey-bg;
+    margin-right: 2px;
+    // padding: 0 10px;
+    border-left: 1px solid $light-border;
+    border-right: 1px solid $light-border;
+    border-top: 1px solid $light-border;
+    // background-color: $dark-grey-bg;
+    height: 100%;
+
+    &--active {
+      background-color: white;
+    }
+
+    .invisible-border {
+      background-color: white;
+      width: 100%;
+      height: 1px;
+
+      z-index: 9;
+      position: absolute;
+      bottom: -1px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../../../css/styles/colors";
+
+.proofGrid {
+  width: 100%;
+  &__field {
+    // margin: 20px 0;
+    &__label {
+      font-size: 14px;
+      color: $light-text;
+      margin-bottom: 10px;
+    }
+    &__input {
+      width: 100%;
+      font-family: "Inter Medium", sans-serif !important;
+    }
+    input,
+    textarea {
+      font-size: 16px !important;
+      color: rgba(0, 0, 0, 0.65);
+      font-family: "Inter Medium", sans-serif !important;
+
+      &::placeholder {
+        font-family: "Inter Regular", sans-serif !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../../../css/styles/colors";
+
+.addFormation {
+  width: 100%;
+  &__field {
+    &__input {
+      width: 100%;
+    }
+
+    &__btnContainer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      &__btn {
+        width: 150px;
+      }
+    }
+  }
+}

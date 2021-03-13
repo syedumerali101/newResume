@@ -1,0 +1,91 @@
+@import "./css/styles/colors";
+
+.App {
+  text-align: center;
+  font-family: "Inter Regular", sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.title {
+  font-family: "Inter Bold", sans-serif;
+
+  &--sm {
+    font-family: "Inter Bold", sans-serif;
+    font-size: 20px;
+  }
+  &--md {
+    font-family: "Inter Bold", sans-serif;
+    font-size: 22px;
+  }
+  &--lg {
+    font-family: "Inter Bold", sans-serif;
+    font-size: 25px;
+  }
+}
+
+.btn--primary {
+  color: $white;
+  font-family: "Inter Semibold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  font-size: 14px !important;
+  padding: 0 30px;
+  background-color: $btn-primary;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: $darkest-grey-bg;
+  cursor: not-allowed;
+}
+
+.btn--secondary {
+  color: $default-black;
+  font-family: "Inter Semibold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  font-size: 14px !important;
+  padding: 0 30px;
+  background-color: $dark-grey-bg;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.label {
+  font-size: 14px;
+  color: $light-text;
+  margin-bottom: 10px;
+  text-align: left;
+  color: $light-text;
+  font-family: "Inter Medium", sans-serif;
+}
+
+input,
+textarea {
+  font-size: 14px !important;
+  color: rgba(0, 0, 0, 0.65);
+  font-family: "Inter Medium", sans-serif !important;
+
+  &::placeholder {
+    font-family: "Inter Regular", sans-serif !important;
+  }
+}

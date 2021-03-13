@@ -1,0 +1,62 @@
+@import "../../../css/styles/colors";
+
+.video {
+  &__presentation {
+    margin-top: 20px;
+    width: 40%;
+    // height: 500px;
+    background-color: $dark-grey-bg;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__video {
+      background-color: $darker-grey-bg;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__actions {
+      width: 30%;
+      margin: 8px auto 10px auto;
+    }
+
+    &__field {
+      width: 100%;
+      margin-top: 20px;
+
+      &__input {
+        width: 100%;
+      }
+      // height: 30%;
+    }
+
+    &__btn {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+}
+
+.capturing {
+  max-width: 100%;
+  animation-name: scale-icon;
+  animation-iteration-count: infinite;
+  animation-duration: 0.6s;
+  // -webkit-transition: all 0.9s ease;
+  // -moz-transition: all 0.9s ease;
+  // -o-transition: all 0.9s ease;
+  // transition: all 0.9s ease;
+  animation-direction: alternate;
+}
+
+@keyframes scale-icon {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}

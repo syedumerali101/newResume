@@ -1,0 +1,60 @@
+@import "../../../css/styles/colors";
+
+.pitcherRequirements {
+  &__btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    &__btn {
+      width: 200px;
+      text-decoration: none;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin-left: 48px;
+  }
+
+  &__title {
+    margin-left: 20px;
+  }
+
+  &__grid {
+    padding-left: 68px;
+  }
+  &__gridItem {
+    text-align: left;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:nth-of-type(1) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &:nth-of-type(2) {
+      line-height: 30px;
+    }
+  }
+
+  &__requirement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    width: 33%;
+    text-align: center;
+    &__txt {
+      color: #415bf6;
+      font-family: "Inter Medium";
+    }
+  }
+}

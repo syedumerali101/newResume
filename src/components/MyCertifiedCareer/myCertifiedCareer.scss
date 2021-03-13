@@ -1,0 +1,54 @@
+@import "../../css/styles/colors";
+
+.myCertifiedCareer {
+  width: 100%;
+  background-color: $white;
+  padding: 20px;
+  border-radius: 6px;
+  &__tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid $light-border;
+    // background-color: red;
+    &__tabLink {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      color: $light-text;
+      font-family: "Inter Medium", sans-serif;
+      margin-right: 20px;
+      text-transform: capitalize !important;
+
+      -webkit-transition: color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
+      -moz-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      &:hover {
+        border-top: 2px solid transparent;
+
+        border-bottom: 2px solid $default-black;
+        color: $default-black;
+      }
+      &--active {
+        border-top: 2px solid transparent;
+
+        color: $default-black;
+        border-bottom: 2px solid $default-black;
+      }
+    }
+    div {
+      div {
+        border-bottom: 1px solid $light-border !important;
+      }
+    }
+  }
+  &__content {
+    margin-top: 20px;
+    display: flex;
+  }
+}

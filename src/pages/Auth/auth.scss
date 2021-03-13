@@ -1,0 +1,88 @@
+.auth__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  // font-size: 1.6rem;
+  background-color: white;
+  height: 100vh;
+  &__left {
+    width: 40%;
+    padding: 0 7%;
+  }
+  &__right {
+    width: 800px;
+    // background-color: #000;
+    display: block;
+    // background-image: url(../../assets/images/authWallpaper.png);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__tabs {
+      position: absolute;
+      z-index: 9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      height: 400px;
+      padding: 0 10px;
+      &__tabCol {
+        width: 35%;
+        // height: 300px;
+        height: 400px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+
+        &__tab {
+          width: 100%;
+          span {
+            cursor: pointer;
+            display: inline-block;
+            width: 170px;
+            // padding: 20px;
+            border-radius: 10px;
+            padding: 15px 0;
+            font-family: "Inter SemiBold", sans-serif;
+            border: 1px solid rgb(187, 187, 187);
+
+            background-color: white !important;
+          }
+        }
+      }
+      &__tabColLeft .auth__container__right__tabs__tabCol__tab {
+        display: flex;
+        justify-content: flex-end !important;
+        align-items: center;
+        &:nth-of-type(2) {
+          justify-content: flex-start !important;
+        }
+      }
+      &__tabColRight .auth__container__right__tabs__tabCol__tab {
+        display: flex;
+        justify-content: flex-start !important;
+
+        align-items: center;
+        &:nth-of-type(2) {
+          justify-content: flex-end !important;
+        }
+      }
+    }
+    // &__img {
+    //   // object-fit: contain;
+    //   border-radius: 10px;
+    //   width: 100%;
+    //   height: 100%;
+    //   // width: 100px;
+    //   // height: 100px;
+    // }
+  }
+}

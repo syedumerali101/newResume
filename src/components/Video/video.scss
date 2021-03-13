@@ -1,0 +1,32 @@
+@import "../../css/styles/colors";
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__inputContainer {
+    width: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__input {
+    text-align: left;
+    width: 80%;
+  }
+
+  &__switch {
+    width: 20%;
+  }
+
+  &__box {
+    background-color: $dark-grey-bg;
+    width: 50%;
+    outline: none;
+    height: 300px;
+  }
+}
